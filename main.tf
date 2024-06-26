@@ -31,5 +31,5 @@ data "google_container_cluster" "my_cluster" {
 }
 
 output "node_pool_name" {
-  value = data.google_container_cluster.my_cluster.node_pool[0].name
+  value = data.google_container_cluster.my_cluster.node_pool[0].id
 }
